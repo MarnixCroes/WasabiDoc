@@ -922,18 +922,6 @@ The backend server also sends you information about the current mempool for fee 
 :::
 
 :::details
-### How long does it take to mix my coins?
-
-It depends on many things, the longest period is the wait for all peers to register their coins.
-Every round has a goal of 100 anonymity set.
-Wasabi is developed in a way that there's a round at least once every one hour.
-If the 100 peers registered earlier, then there can be many rounds per hour.
-When all peers are registered, then the signing phase is done within a couple of seconds.
-
-Summing up: the faster peers register in the CoinJoins, the faster the mixes are.
-:::
-
-:::details
 ### What is the address of the coordinator?
 
 The coordinator possibly gets paid in every coinjoin.
