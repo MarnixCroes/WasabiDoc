@@ -847,7 +847,7 @@ All Alices have to sign this new transaction and send their signature to the coo
 
 ### What is happening in the broadcasting phase?
 
-In the [broadcasting phase](/using-wasabi/CoinJoin.md#broadcasting) the coordinator sends the signed final CoinJoin transaction to several random Bitcoin peer to peer nodes, and it is gossiped throughout the network to the miners.
+In the [broadcasting phase](/using-wasabi/CoinJoin.md#broadcasting) the coordinator sends the signed final coinjoin transaction to several random Bitcoin peer to peer nodes, and it is gossiped throughout the network to the miners.
 
 ### Is there any additional anonymity using multiple wallets for CoinJoins?
 
