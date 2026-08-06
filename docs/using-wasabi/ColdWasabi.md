@@ -9,7 +9,7 @@
 
 [[toc]]
 
-:::warning Coldcard seed-entropy advisory (July 2026)
+:::danger Coldcard seed-entropy advisory (July 2026)
 Coinkite disclosed a firmware flaw that reduced generated seed entropy on **Coldcard Mk3** (firmware 4.0.1–5.0.3) and pre-fix **Mk4/Q**.
 Seeds generated without extra dice rolls may be brute-forceable.
 Update to fixed firmware, generate a new seed and move your funds.
