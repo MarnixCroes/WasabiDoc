@@ -9,6 +9,13 @@
 
 [[toc]]
 
+:::danger Coldcard seed-entropy advisory (July 2026)
+Coinkite disclosed a firmware flaw that reduced generated seed entropy on **Coldcard Mk3** (firmware 4.0.1–5.0.3) and pre-fix **Mk4/Q**.
+Seeds generated without extra dice rolls may be brute-forceable.
+Update to fixed firmware, generate a new seed and move your funds.
+See the [Coinkite advisory](https://blog.coinkite.com/coldcard-mk3-seed-generation-warning/).
+:::
+
 ## Using hardware wallet step-by-step
 
 1. Start your Wasabi Wallet and go to `Add Wallet`.
