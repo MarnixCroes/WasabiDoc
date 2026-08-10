@@ -38,9 +38,6 @@ JsonRpcUser: [username] (default: random string)
 JsonRpcPassword: [userpassword] (default: random string)
 ```
 
-By default both `JsonRpcUser` and `JsonRpcPassword` are empty `""`, which means that `Anonymous` requests are allowed.
-On the other hand, if `JsonRpcUser` and `JsonRpcPassword` are not empty it means that the requester has to provide the right credentials, otherwise he will get a http status code 401 (Unauthorized).
-
 It is recommended to install the `jq` [command line json processor](https://jqlang.github.io/jq/) with `sudo apt-get install jq`, and then adding `| jq` at the end of every RPC command to have a structured output.
 
 Then start Wasabi Wallet and load the wallet you want to use.
