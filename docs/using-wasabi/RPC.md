@@ -34,8 +34,8 @@ JsonRpcServerPrefixes: [an array of string with prefixes]
 The RPC server can be configured to allow `Anonymous` access or `Basic authentication` just by editing:
 
 ```
-JsonRpcUser: [username] (default: empty)
-JsonRpcPassword: [userpassword] (default: empty)
+JsonRpcUser: [username] (default: random string)
+JsonRpcPassword: [userpassword] (default: random string)
 ```
 
 By default both `JsonRpcUser` and `JsonRpcPassword` are empty `""`, which means that `Anonymous` requests are allowed.
