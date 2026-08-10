@@ -98,7 +98,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 	You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
 	:::
 
-4. Extract the package while keeping the file permissions: `chmod +x Wasabi-${currentVersion}.AppImage`.
+4. Make the package executable while keeping the file permissions: `chmod +x Wasabi-${currentVersion}.AppImage`.
 
 5. Run Wasabi by executing `./Wasabi-${currentVersion}.AppImage`.
 
