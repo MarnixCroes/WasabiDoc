@@ -88,6 +88,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 
 2. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.AppImage` package and the corresponding `.asc` signature file.
 
+![Download Wasabi Wallet for Linux AppImage](/DownloadAppImage.png "Download Wasabi Wallet for Linux AppImage")
 
 3. In the Download folder, run `gpg --verify Wasabi-${currentVersion}.AppImage.asc Wasabi-${currentVersion}.AppImage`.
 
