@@ -89,7 +89,7 @@ If you have already imported zkSNACKs' PGP public key, then jump to step 2.
 2. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.AppImage` package and the corresponding `.asc` signature file.
 
 
-3. In the Download folder, run `gpg --verify Wasabi-${currentVersion}-AppImage.asc Wasabi-${currentVersion}.AppImage`.
+3. In the Download folder, run `gpg --verify Wasabi-${currentVersion}.AppImage.asc Wasabi-${currentVersion}.AppImage`.
 
 	If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
 
