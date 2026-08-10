@@ -734,7 +734,7 @@ The first parameter is the wallet passphrase, the second parameter is `stopWhenA
 Pay to a specific bitcoin address in a coinjoin.
 
 ```bash
-curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"payincoinjoin", "params":["tb1qaznf0ky4yh8vc3yhew984jhxugr8apeu7wa98d", 10000]}' http://127.0.0.1:37128/WalletName | jq
+curl -s --data-binary '{"jsonrpc":"2.0", "id":"1", "method":"payincoinjoin", "params":["tb1qaznf0ky4yh8vc3yhew984jhxugr8apeu7wa98d", 10000, "UserPassphrase"]}' http://127.0.0.1:37128/WalletName | jq
 ```
 
 ```json
