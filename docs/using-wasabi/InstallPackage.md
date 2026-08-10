@@ -78,6 +78,33 @@ If the message returned says `Good signature from zkSNACKs` and that it was sign
 After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
 Among others, here is where your wallet files and your logs reside.
 
+## Linux AppImage
+
+If you have already imported zkSNACKs' PGP public key, then jump to step 2.
+
+1. Download zkSNACKs' PGP public key [here](https://github.com/WalletWasabi/WalletWasabi/blob/master/PGP.txt), and then import it with `gpg --import PGP.txt`.
+
+	Verify that the fingerprint is `${zksnacksPublicKeyFingerprint}` by running this command `gpg --list-keys zkSNACKs`.
+
+2. [Download](https://wasabiwallet.io/#download) the latest Wasabi release, both the `.AppImage` package and the corresponding `.asc` signature file.
+
+
+3. In the Download folder, run `gpg --verify Wasabi-${currentVersion}-AppImage.asc Wasabi-${currentVersion}.AppImage`.
+
+	If the message returned says `Good signature from zkSNACKs` and that it was signed with `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`, then the software was not tampered with since the developer signed it.
+
+	:::tip
+	The output from the verify command may contain `WARNING: This key is not certified with a trusted signature!`.
+	You can ignore this, but if you want to fully verify your download, you need to ask people you trust to confirm that the key fingerprint belongs to zkSNACKs.
+	:::
+
+4. Extract the archive while keeping the file permissions: `chmod +x Wasabi-${currentVersion}.AppImage`.
+
+5. Run Wasabi by executing `./Wasabi-${currentVersion}.AppImage`.
+
+After the first run, a [data folder](/FAQ/FAQ-UseWasabi.md#where-can-i-find-the-wasabi-data-folder) will be created.
+Among others, here is where your wallet files and your logs reside.
+
 ## Other Linux
 
 If you have already imported zkSNACKs' PGP public key, then jump to step 2.
