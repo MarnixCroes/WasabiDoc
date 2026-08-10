@@ -43,7 +43,7 @@ In the terminal, change the directory to the one with the downloaded files, and 
 
 Everything is valid if it returns `Good signature from zkSNACKs` and that it was signed with the `Primary key fingerprint: ${zksnacksPublicKeyFingerprint}`.
 
-For an in-depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [other Linux](/using-wasabi/InstallPackage.md#other-linux), [Windows](/using-wasabi/InstallPackage.md#windows), and [macOS](/using-wasabi/InstallPackage.md#macOS) see the main documentation.
+For an in-depth guide for [Debian and Ubuntu](/using-wasabi/InstallPackage.md#debian-and-ubuntu), [AppImage](/using-wasabi/InstallPackage.md#linux-appimage), [other Linux](/using-wasabi/InstallPackage.md#other-linux), [Windows](/using-wasabi/InstallPackage.md#windows), and [macOS](/using-wasabi/InstallPackage.md#macOS) see the main documentation.
 
 [![Watch the video](/Logo_without_text_with_bg_dark_with_yt.png)](https://youtu.be/mTrClVA_o5A)
 
