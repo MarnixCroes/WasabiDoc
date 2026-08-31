@@ -31,15 +31,11 @@ JsonRpcServerPrefixes: [an array of string with prefixes]
 	(default: [	"http://127.0.0.1:37128/", "http://localhost:37128/"])
 ```
 
-The RPC server can be configured to allow `Anonymous` access or `Basic authentication` just by editing:
-
 ```
-JsonRpcUser: [username] (default: empty)
-JsonRpcPassword: [userpassword] (default: empty)
+JsonRpcUser: [username] (default: random string)
+JsonRpcPassword: [userpassword] (default: random string)
 ```
-
-By default both `JsonRpcUser` and `JsonRpcPassword` are empty `""`, which means that `Anonymous` requests are allowed.
-On the other hand, if `JsonRpcUser` and `JsonRpcPassword` are not empty it means that the requester has to provide the right credentials, otherwise he will get a http status code 401 (Unauthorized).
+Anonymous access (empty username and userpassword) is not allowed.
 
 It is recommended to install the `jq` [command line json processor](https://jqlang.github.io/jq/) with `sudo apt-get install jq`, and then adding `| jq` at the end of every RPC command to have a structured output.
 
@@ -924,7 +920,6 @@ The RPC server can be exposed as an onion service by using the _rpconionenabled=
 
 A few notes:
 - _Tor_ needs to be enabled.
-- Anonymous access is not allowed: _jsonrpcuser_ & _jsonrpcpassword_ need to be specified.
 - _RpcOnionEnabled_ is only available as a command line switch (start up parameter) and an environment variable, it is not available in the config file.
 - A new onion address is generated at each startup.
 
@@ -941,10 +936,6 @@ The onion address is shown in the log:
 ```
 INFO       Global.StartTorProcessManagerAsync (284)        RPC server listening on http://rrdayxv2pngzl3jyal5dfjvl6s4bt4frvo5jj2rgnajz5gyevrm4fvyd.onion/
 ```
-
-The onion service cannot be started in case the _jsonrpcuser_ and/or _jsonrpcpassword_ are not specified and it will log: `Anonymous access RPC server cannot be exposed as onion service.`
-
-You need to specify them in the config file, or add them as command line switches or environment variables.
 
 In the RPC calls, the localhost, jsonrpcuser and jsonrpcpassword need to be specified.
 
